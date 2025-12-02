@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About - Kayla Marrisette</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="logo"><a href="index.html">Kayla Marrisette</a></div>
+<nav aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="cooking.html">Cooking</a></li>
+<li><a href="streaming.html">Streaming</a></li>
+<li><a href="editing.html">Editing</a></li>
+<li><a href="recording.html">Recording</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section class="two-column" aria-labelledby="about-heading">
+<div>
+<h1 id="about-heading">About Me</h1>
+<p>I was born in Corpus Christi, Texas (2001) and grew up in Mobile, Alabama. I earned an Associate’s Degree in Culinary Arts in 2021 and am now pursuing Digital Film & Television Production with a Computer Science minor.</p>
+<p>I enjoy blending art, technology, and storytelling to inspire others.</p>
+</div>
+<div>
+<img src="self.jpg" alt="Portrait of Kayla " class="responsive-img" />
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="footer-inner">
+<p>Contact: <a href="mailto:km2433@jagmail.southalabama.edu">km2433@jagmail.southalabama.edu</a> | Mobile: (251) 555-5555</p>
+<p>SUBSCRIBE TO THE YOUTUBE  </p>
+<p>© 2025 Kayla Marrisette | Designed with care</p>
+</div>
+</footer>
+
+
+<script>
+(function() {
+const links = document.querySelectorAll('header nav ul li a');
+const path = location.pathname.split('/').pop() || 'index.html';
+links.forEach(a => {
+if (a.getAttribute('href') === path) a.classList.add('active');
+});
+})();
+</script>
+</body>
+</html>

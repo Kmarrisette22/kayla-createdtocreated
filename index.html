@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kayla Marrisette - Home</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="logo"><a href="index.html">Kayla Marrisette</a></div>
+<nav aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="cooking.html">Cooking</a></li>
+<li><a href="streaming.html">Streaming</a></li>
+<li><a href="editing.html">Editing</a></li>
+<li><a href="recording.html">Recording</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+
+
+
+<main>
+<section class="banner" aria-label="Site banner">
+<img src="newbanner.jpg" alt="Banner image for Kayla Marrisette" class="responsive-img" />
+</section>
+<section aria-labelledby="WELCOME">
+<h1 id="Welcome">Welcome To Created To Create!</h1>
+</section>
+
+
+<section aria-labelledby="gallery-preview">
+<h2 id="gallery-preview">Preview</h2>
+<div class="small-gallery">
+<img src="homethumbnail.JPG" alt="YouTube thumbnail image 1" />
+<img src="cinnamonroll.jpg" alt="Cinnamon Rolls  image 2" />
+<img src="cremebrule.jpg" alt="cremebrule image 3" />
+</div>
+</section>
+</main>
+
+
+
+
+<section aria-labelledby="highlights">
+<h2 id="highlights">Highlights</h2>
+<div class="two-column">
+<div>
+<h3>Projects & Portfolios</h3>
+<p> The Streaming Setup Is Near Completion! See The "STREAMING" Tab To See How Far I Have Come!.</p>
+</div>
+<div>
+<h3>Latest Updates</h3>
+<p>I Am Currently Working On A Playthrough Of A New Game On My Channel! Stay Tuned.</p>
+</div>
+</div>
+</section>
+
+
+
+
+<footer>
+<div class="footer-inner">
+<p>Contact: <a href="mailto:km2433@jagmail.southalabama.edu">km2433@jagmail.southalabama.edu</a> | Mobile: (251) 555-5555</p>
+<p>SUBSCRIBE TO THE YOUTUBE  </p>
+<p>© 2025 Kayla Marrisette | Designed with care</p>
+</div>
+</footer>
+
+
+<script>
+// Set active nav link based on filename for accessibility and clarity
+(function() {
+const links = document.querySelectorAll('header nav ul li a');
+const path = location.pathname.split('/').pop() || 'index.html';
+links.forEach(a => {
+if (a.getAttribute('href') === path) a.classList.add('active');
+});
+})();
+</script>
+</body>
+</html>

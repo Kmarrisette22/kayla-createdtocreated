@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cooking - Kayla Marrisette</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="logo"><a href="index.html">Kayla Marrisette</a></div>
+<nav aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="cooking.html">Cooking</a></li>
+<li><a href="streaming.html">Streaming</a></li>
+<li><a href="editing.html">Editing</a></li>
+<li><a href="recording.html">Recording</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section>
+    <h1>Cooking</h1>
+    <p style="text-align: center;">Cooking was one of my first creative outlets.</p>
+    <p style="text-align: center;">Here Are Three Of My Favorite Things To Make! On The Left Is Creme Brûlée, In The Middle Is a Gorgonzola Stuffed Pork Loin, and On The Right Are Chocolate Chip Cookies.</p>
+
+    <div class="gallery" aria-label="Cooking gallery">
+        <img src="cremebrule.jpg" alt="Cooking image 1" />
+        <img src="porkloin.JPG" alt="Cooking image 2" />
+        <img src="cookies.jpg"  alt="Cooking image 3" />
+    </div>
+</section>
+
+<section>
+    <h2>About Cooking</h2>
+    <p style="text-align: center;">When You Are In The Kitchen Cooking, The Possibilities Are Endless! Cooking is Rewarding Because You Get To Enjoy The Product When You Are Done, or With Proper Documentation, You Can Even Make A Profit From It!</p>
+</section>
+</main>
+
+
+
+<footer>
+<div class="footer-inner">
+<p>Contact: <a href="mailto:km2433@jagmail.southalabama.edu">km2433@jagmail.southalabama.edu</a> | Mobile: (251) 555-5555</p>
+<p>SUBSCRIBE TO THE YOUTUBE  </p>
+<p>© 2025 Kayla Marrisette | Designed with care</p>
+</div>
+</footer>
+
+
+<script>
+(function() {
+const links = document.querySelectorAll('header nav ul li a');
+const path = location.pathname.split('/').pop() || 'index.html';
+links.forEach(a => {
+if (a.getAttribute('href') === path) a.classList.add('active');
+});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Editing - Kayla Marrisette</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<div class="logo"><a href="index.html">Kayla Marrisette</a></div>
+<nav aria-label="Primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="cooking.html">Cooking</a></li>
+<li><a href="streaming.html">Streaming</a></li>
+<li><a href="editing.html">Editing</a></li>
+<li><a href="recording.html">Recording</a></li>
+
+</ul>
+</nav>
+</header>
+
+
+<main>
+<section>
+<h1>Editing</h1>
+<p>Editing is where the magic happens—color grading, sound design, and pacing. Showcase before/after stills or short clips here.</p>
+
+
+
+<div class="gallery">
+<img src="prempro.jpg" alt="premiere pro image 1" />
+<img src="photoshop.jpg" alt="photoshop image 2" />
+<img src="finalcut.jpg" alt="Final Cut image 3" />
+</div>
+</section>
+</main>
+
+<section>
+<h2>How I Edit</h2>
+<p>When I Edit, Where I Start Depends Heavily on The Project I Am Working On. If I Need to Create Some Overlays that Are Animated, I Will Start With Final Cut Pro as I Have A Lot Of Different Plugins That I Like To Use. If I Am Just Putting Clips Together That Require No New Overlays or Animations, I Will start With Adobe Premiere Pro. Recently, For All OF My Thumbnails, I Have Been using Adobe Photoshop. </p>
+
+<section aria-labelledby="">
+<h2 id="Software">Software</h2>
+<div>
+<div>
+<h3>Final Cut Pro</h3>
+</div>
+<div>
+<h3>Adobe Premiere Pro</h3>
+</div>
+<div>
+<h3>Adobe Photoshop</h3>
+</div>
+</div>
+</section>
+
+
+
+<footer>
+<div class="footer-inner">
+<p>Contact: <a href="mailto:km2433@jagmail.southalabama.edu">km2433@jagmail.southalabama.edu</a> | Mobile: (251) 555-5555</p>
+<p>SUBSCRIBE TO THE YOUTUBE  </p>
+<p>© 2025 Kayla Marrisette | Designed with care</p>
+</div>
+</footer>
+
+
+<script>
+(function() {
+const links = document.querySelectorAll('header nav ul li a');
+const path = location.pathname.split('/').pop() || 'index.html';
+links.forEach(a => {
+if (a.getAttribute('href') === path) a.classList.add('active');
+});
+})();
+</script>
+</body>
+</html>

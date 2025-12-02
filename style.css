@@ -1,0 +1,123 @@
+/* ---------- Reset ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---------- Body Styling ---------- */
+body {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #fff;
+  background: linear-gradient(to bottom, #000000, #001f3f, #004080, #0074D9, #7FDBFF);
+  background-attachment: fixed;
+  background-size: 100% 200%;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a { color: inherit; }
+
+/* ---------- Header and Navigation ---------- */
+header {
+  position: fixed; top: 0; left: 0; width: 100%; background: rgba(0,0,0,0.85);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4); z-index: 1000;
+  display: flex; justify-content: space-between; align-items: center; padding: 12px 40px;
+}
+
+.logo a {
+  font-size: 1.4em; font-weight: 600; color: #7FDBFF;
+  text-decoration: none; letter-spacing: 2px;
+}
+
+nav ul { list-style: none; display: flex; gap: 18px; align-items: center; }
+
+nav ul li a {
+  text-decoration: none; color: #ffffff; font-weight: 500; font-size: 1em;
+  padding: 8px 12px; border-radius: 22px; background: rgba(255,255,255,0.05);
+  transition: all 0.25s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background-color: #00e6ff; color: #000; transform: scale(1.05);
+}
+
+/* ensure main content doesn't sit under fixed header */
+main { padding-top: 90px; }
+
+/* ---------- Sections ---------- */
+section { padding: 60px 20px; text-align: center; }
+
+.banner {
+  position: relative; display: grid; place-items: center; min-height: 50vh;
+}
+
+.banner img {
+  width: 100%; max-height: 420px; object-fit: cover; display: block; opacity: 0.95;
+}
+
+.banner-text {
+  position: absolute; text-align: center; padding: 20px;
+}
+
+h1, h2 {
+  text-transform: uppercase; margin-bottom: 14px; letter-spacing: 2px;
+}
+
+h1 { font-size: 2.4em; color: #7FDBFF; }
+h2 { font-size: 1.8em; color: #00bfff; }
+
+p {
+  max-width: 900px; margin: 0.5rem auto 1rem;
+  font-size: 1.05em; color: #f0f0f0;
+}
+
+/* Two-column layout */
+.two-column {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 30px;
+  align-items: center; max-width: 1100px; margin: 0 auto;
+}
+
+.responsive-img {
+  width: 100%; height: auto; border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+}
+
+/* Gallery */
+.gallery {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+  max-width: 1100px; margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%; height: 220px; object-fit: cover; border-radius: 6px;
+}
+
+.small-gallery {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  max-width: 800px; margin: 0 auto;
+}
+
+.small-gallery img {
+  width: 100%; height: 140px; object-fit: cover; border-radius: 6px;
+}
+
+/* Contact form */
+.contact-form {
+  max-width: 640px; margin: 20px auto; display: grid; gap: 10px;
+}
+
+.contact-form label {
+  text-align: left; font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px; border-radius: 6px; border: 0; font-size: 1em;
+}
+
+.contact-form button {
+  padding: 10px 16px; border-radius: 8px;
+  background: #00e6ff; border: none; font-weight: 700; cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center; padding: 24px 10px;
+  background-color: rgba(0,0,0,0.85
